@@ -1,0 +1,76 @@
+@use 'utilities';
+
+input[type=file] {
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+.upload {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	width: 800px;
+	@include utilities.h-center;
+}
+.upload__file {
+	width: 100%;
+
+	border-radius: 20px;
+	@include utilities.gradient(90deg);
+}
+.upload__text {
+	font-size: 1.5rem;
+	text-align: center;
+	@include utilities.h-center;
+	display: block;
+	margin-top: 30%;
+}
+.upload__filename {
+	font-size: 1.2rem;
+	text-align: center;
+	@include utilities.h-center;
+	display: block;
+	margin-top: 30%;
+}
+
+.upload_fileMeta {
+	height: 100%;
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 1rem;
+}
+
+.gradient__button {
+	width: 100%;
+}
+.gradient {
+	width: 100%;
+}
+
+input[type=text], textarea {
+	padding-block: 4px;
+	padding-inline: 8px;
+	border-radius: 5px;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	font-size: 1.2rem;
+
+	resize: none;
+
+	background-color: #333;
+	color: #ddd;
+
+	&::placeholder {
+		font-style: italic;
+	}
+}
+
+.description {
+	height: 200px;
+}

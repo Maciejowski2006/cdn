@@ -1,0 +1,105 @@
+@use 'utilities';
+main {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 8rem;
+	padding-inline: 8rem;
+}
+h2 {
+	text-align: center;
+	font-weight: 600;
+	letter-spacing: 8px;
+	text-transform: capitalize;
+	@include utilities.gradient(90deg);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-block: 4rem;
+	font-size: 2rem;
+}
+
+#userList {
+	width: 600px;
+	@include utilities.h-center;
+
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	.user {
+		display: flex;
+		flex-direction: row;
+
+		justify-content: space-between;
+		align-items: center;
+
+		.admin {
+			color: utilities.$a1;
+		}
+	}
+}
+.createUser {
+	.vert {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-block: 1rem;
+
+		gap: 1rem;
+	}
+	.gradient {
+		margin: 0;
+	}
+
+	label {
+		width: 200px;
+		padding: 8px;
+	}
+	button {
+		height: 100%;
+	}
+}
+
+#fileList {
+	width: 600px;
+	@include utilities.h-center;
+
+	display: flex;
+	flex-direction: column;
+
+	.vert {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-block: 1rem;
+		gap: 1rem;
+	}
+	label {
+		width: 200px;
+		padding: 8px;
+	}
+	button {
+		height: 100%;
+	}
+}
+
+input[type=text], input[type=password] {
+	padding-block: 4px;
+	padding-inline: 8px;
+	border-radius: 5px;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	font-size: 1.2rem;
+
+	background-color: #333;
+	color: #ddd;
+
+	&::placeholder {
+		font-style: italic;
+	}
+}
+
+.hiddenInput {
+	display: none;
+}

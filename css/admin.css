@@ -1,0 +1,98 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8rem;
+  padding-inline: 8rem;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 8px;
+  text-transform: capitalize;
+  background: linear-gradient(90deg, #3867d6 0%, #45aaf2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-block: 4rem;
+  font-size: 2rem;
+}
+
+#userList {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#userList .user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#userList .user .admin {
+  color: #3867d6;
+}
+
+.createUser .vert {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-block: 1rem;
+  gap: 1rem;
+}
+.createUser .gradient {
+  margin: 0;
+}
+.createUser label {
+  width: 200px;
+  padding: 8px;
+}
+.createUser button {
+  height: 100%;
+}
+
+#fileList {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+#fileList .vert {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-block: 1rem;
+  gap: 1rem;
+}
+#fileList label {
+  width: 200px;
+  padding: 8px;
+}
+#fileList button {
+  height: 100%;
+}
+
+input[type=text], input[type=password] {
+  padding-block: 4px;
+  padding-inline: 8px;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  background-color: #333;
+  color: #ddd;
+}
+input[type=text]::placeholder, input[type=password]::placeholder {
+  font-style: italic;
+}
+
+.hiddenInput {
+  display: none;
+}
+
+/*# sourceMappingURL=admin.css.map */

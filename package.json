@@ -1,0 +1,14 @@
+{
+  "name": "cdn",
+  "version": "1.0.0",
+  "description": "Custom file CDN",
+  "main": "index.php",
+  "scripts": {
+    "sass": "sass -w scss:css"
+  },
+  "author": "Maciejowski",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
+}

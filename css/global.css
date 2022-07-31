@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Finlandica:wght@400;500;600&display=swap");
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  font-family: "Finlandica", sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  background-color: #333;
+  color: #ddd;
+}
+
+.gradient__item {
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(90deg, #3867d6 0%, #45aaf2 100%);
+  width: 100%;
+  height: 50px;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 8px;
+  text-transform: capitalize;
+  background: linear-gradient(90deg, #3867d6 0%, #45aaf2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  width: 550px;
+  margin-block: 4rem;
+  font-size: 3rem;
+}
+
+.gradient__button {
+  background: linear-gradient(90deg, #3867d6 0%, #45aaf2 100%);
+  padding: 4px;
+  border-radius: 8px;
+  display: flex;
+}
+.gradient__button button {
+  display: block;
+  padding: 8px 16px;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #333333;
+  color: #ddd;
+  transition-duration: 150ms;
+  flex-grow: 0;
+}
+.gradient__button button:hover {
+  background: linear-gradient(90deg, #3867d6 0%, #45aaf2 100%);
+  color: white;
+}
+
+.gradient__button-multiple button:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.gradient__button-multiple button:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.logout {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background: linear-gradient(90deg, #3867d6 0%, #45aaf2 100%);
+  width: 150px;
+  height: 50px;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+nav {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  font-size: 2rem;
+}
+nav .gradient__item {
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+}
+nav .gradient__item button {
+  display: block;
+  font-size: 1.25rem;
+  border: 0;
+  cursor: pointer;
+  background-color: #333333;
+  color: #ddd;
+  transition-duration: 150ms;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  flex-grow: 0;
+}
+nav .gradient__item button:hover {
+  background: linear-gradient(90deg, #3867d6 0%, #45aaf2 100%);
+  color: white;
+}
+nav section {
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+}
+nav section .gradient__item {
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+nav section .gradient__item button {
+  display: block;
+  font-size: 1.25rem;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #333333;
+  color: #ddd;
+  transition-duration: 150ms;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  flex-grow: 0;
+}
+nav section .gradient__item button:hover {
+  background: linear-gradient(90deg, #3867d6 0%, #45aaf2 100%);
+  color: white;
+}
+nav section .inline, nav section .inline:hover, nav section .inline:visited {
+  display: block;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-inline: 0.5rem;
+  color: #ddd;
+  text-decoration: none;
+}
+nav section .inline:hover, nav section .inline:hover:hover, nav section .inline:visited:hover {
+  color: white;
+}
+nav section .management {
+  margin-top: 150px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+@keyframes show {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes hide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+nav .section-active {
+  animation-iteration-count: 1;
+  animation-name: show;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
+  transform: translateX(0);
+}
+nav .section-hidden {
+  animation-iteration-count: 1;
+  animation-name: hide;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
+  transform: translateX(-100%);
+}
+
+/*# sourceMappingURL=global.css.map */
